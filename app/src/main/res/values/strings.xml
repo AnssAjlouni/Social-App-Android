@@ -1,0 +1,259 @@
+<resources>
+    <!-- App Strings-->
+    <string name="app_name">FutureAcademy</string>
+    <string name="default_notification_channel_id">Future Academy</string>
+    <string name="send">Send</string>
+    <string name="your_comment">Your comment here...</string>
+    <string name="image_share">Share</string>
+    <string name="write_description">Write a description</string>
+    <string name="write_here">Write here</string>
+    <string name="loading">Loading</string>
+    <string name="name_hint">Your name..</string>
+    <string name="btn_save">Save</string>
+    <string name="likes_count">0 Likes</string>
+    <string name="comment_count">0 Comments</string>
+    <string name="write_post">Write a post</string>
+    <string name="logo">Future Academy</string>
+    <string name="filter">Filter</string>
+    <string name="adjust">Adjust</string>
+    <string name="brush">Brush</string>
+    <string name="text">Text</string>
+    <string name="eraser">Eraser</string>
+    <string name="sticker">Sticker</string>
+    <string name="emoji">Emoji</string>
+    <string name="brightness">brightness</string>
+    <string name="contrast">contrast</string>
+    <string name="saturation">saturation</string>
+    <!-- ========================================================= -->
+    <!-- App Strings-->
+    <string name="email_hint">Your email...</string>
+    <string name="pass_hint">Password...</string>
+    <string name="reg_btn">Create new account</string>
+    <string name="reg_login_text">Already have an account?</string>
+    <string name="login_btn_text">Login to account</string>
+    <string name="login_reg_btn_text">Need a new account?</string>
+    <string name="logout">Logout</string>
+    <string name="action_settings">Settings</string>
+    <!-- ========================================================= -->
+    <!-- App Strings-->
+    <string name="tab_filters">FILTERS</string>
+    <string name="tab_edit">EDIT</string>
+    <string name="filter_normal">Normal</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+    <!-- ========================================================= -->
+    <!-- App Strings-->
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <!-- ========================================================= -->
+    <!-- App Strings-->
+    <string name="selected_image">selected_image</string>
+    <string name="selected_video">selected_video</string>
+    <string name="selected_bitmap">selected_bitmap</string>
+    <string name="new_photo">new_photo</string>
+    <string name="new_video">new_video</string>
+    <string name="profile_photo">profile_photo</string>
+    <string name="tweet">TWEETS</string>
+    <string name="gallery">GALLERY</string>
+    <string name="video">VIDEO</string>
+    <!-- ========================================================= -->
+    <!-- App Strings-->
+    <string name="dbname_users">users</string>
+    <string name="dbname_user_account_settings">user_account_settings</string>
+    <string name="dbname_photos">Posts</string>
+    <string name="dbname_user_photos">user_Posts</string>
+    <string name="dbname_following">following</string>
+    <string name="dbname_followers">followers</string>
+    <!-- ========================================================= -->
+    <!-- App Strings-->
+    <string name="string_contact_list_activity_title">Contacts</string>
+    <string name="string_conversation_list_activity_title">Conversations</string>
+    <string name="string_create_group_activity_title">New Group</string>
+    <string name="string_add_members_activity_title">Add members</string>
+    <string name="label_no_conversation_error_title">No conversation!</string>
+    <string name="label_no_conversation_error_subtitle">Press the below button to start a new chat!</string>
+    <string name="action_create_group">Create group</string>
+    <string name="activity_group_admin_panel_add_group_title">New Group</string>
+    <!--create_group_activity-->
+    <string name="activity_new_group_icon_label">Add\nphoto</string>
+    <string name="activity_new_group_group_name_hint_label">Set a group name</string>
+    <string name="menu_activity_new_group_action_next">Next</string>
+
+    <!--add_members_activity-->
+    <string name="add_members_activity_searchview_query_hint">Search contact</string>
+    <string name="add_members_activity_contact_already_added_label">Already added to the group</string>
+    <string name="add_members_activity_contact_not_added_label">contact is not present in the list</string>
+    <string name="activity_add_member_to_chat_group_selected_contacts_title">Selected contacts</string>
+    <string name="add_members_activity_contacts_title">Contact List</string>
+    <string name="menu_add_members_action_create">Create</string>
+    <string name="menu_add_members_action_add_member">@string/activity_group_admin_panel_add_member_title</string>
+    <string name="menu_add_members_action_next">Next</string>
+
+    <!--activity contact list -->
+    <string name="label_no_contacts_error_title">No contact found</string>
+    <string name="label_no_contacts_error_subtitle">Change the search parameters</string>
+    <string name="activity_contact_list_error_cannot_create_group_offline_label">You can not create the group if you are offline</string>
+
+    <!--activity_group_admin_panel-->
+    <string name="activity_group_admin_panel_members_label">Members</string>
+    <string name="activity_group_admin_panel_group_admin_label">Group Admin</string>
+    <string name="activity_group_admin_panel_created_by_label">Created by </string>
+    <string name="activity_group_admin_panel_created_on_label">Created on </string>
+    <string name="activity_group_admin_panel_group_id_label">id </string>
+    <string name="activity_group_admin_panel_not_available_members_label">You can search to find members to chat with</string>
+    <string name="activity_group_admin_panel_add_member_title">Add member</string>
+    <string name="menu_activity_group_admin_panel_activity_cannot_add_member_offline">Cannot add a member if you are offline</string>
+
+    <!--bottom_sheet_group_admin_panel_member-->
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_btn_label">Remove member</string>
+    <string name="bottom_sheet_group_admin_panel_member_leave_group_btn_label">Leave group</string>
+    <string name="bottom_sheet_group_admin_panel_member_see_profile_btn_label">See profile</string>
+    <string name="bottom_sheet_group_admin_panel_member_send_message_btn_label">Send message</string>
+    <string name="bottom_sheet_group_admin_panel_member_btn_cancel_label">Cancel</string>
+
+    <!--activity_conversation_list-->
+    <string name="activity_conversation_list_adapter_you_label">you</string>
+
+    <!--fragment_conversation_list-->
+    <string name="fragment_conversation_list_my_group_label">Groups</string>
+
+    <!--bottom_sheet_group_admin_panel_member-->
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_title">Remove member</string>
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_message">Do you really want to remove <b>%1$s</b> from the group?</string>
+    <string name="bottom_sheet_group_admin_panel_member_leave_group_alert_message">Do you really want to leave the group</string>
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_positive_click">Remove</string>
+    <string name="bottom_sheet_group_admin_panel_member_leave_group_alert_positive_click">Leave</string>
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_negative_click">Cancel</string>
+
+    <!--activity_message_list-->
+    <string name="activity_message_list_group_info_you_label">you</string>
+    <string name="activity_message_list_convers_with_presence_online">Online</string>
+    <string name="activity_message_list_convers_with_presence_offline">Offline</string>
+    <string name="activity_message_list_progress_dialog_upload">Upload in progress..</string>
+    <string name="activity_message_list_progress_dialog_upload_failed">Cannot complete the upload</string>
+    <string name="activity_message_list_no_message_error_title_label">You have been removed from the group</string>
+    <string name="activity_message_list_no_message_error_subtitle_label">Contact the administrator for more details</string>
+    <string name="activity_message_list_confirm_dialog_upload_title_label">Send image</string>
+    <string name="activity_message_list_confirm_dialog_upload_message_label">Do you want to send this image?</string>
+    <string name="activity_message_list_type_image_label">image</string>
+    <string name="activity_message_list_type_file_label">file</string>
+
+    <!-- -->
+    <string name="availability">Availability</string>
+    <string name="action_edit">Edit</string>
+    <string name="details">Details</string>
+    <string-array name="availability_states">
+        <item>Available</item>
+        <item>Away</item>
+        <item>Extended Away</item>
+        <item>Busy</item>
+    </string-array>
+    <string name="location_hint">Location</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="country">Country</string>
+    <string name="status">Status</string>
+    <string name="name">Name</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_save">Save</string>
+    <!-- ========================================================= -->
+    <string name="ok">OK</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="posts">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="your_story">Your story</string>
+    <string name="news_feed">News Feed</string>
+    <string name="publish">Publish</string>
+    <string name="total_followers">Total Followers</string>
+    <string name="follow">Follow</string>
+    <string name="done">Done</string>
+    <string name="opacity">Opacity</string>
+    <string name="close">Close</string>
+    <string name="reply">Reply</string>
+    <string name="notification_reply">Reply</string>
+    <string name="replied">Replied</string>
+    <string name="next">Next</string>
+    <string name="likes">Likes</string>
+    <string name="comments">Comments</string>
+    <string name="unfollow">UnFollow</string>
+    <string name="follow_back">Follow Back</string>
+    <string name="accept_follow">Accept Follow Request</string>
+    <string name="cancel_follow">Cancel Follow Request</string>
+    <string name="online">Online</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="just_now">Just now</string>
+    <string name="min_ago">a min ago</string>
+    <string name="minites_ago">minutes ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="days_ago">days ago</string>
+    <string name="hour_ago">an hour ago</string>
+    <string name="yesterday">yesterday</string>
+    <string name="today">Today</string>
+    <string name="title">Title</string>
+    <string name="saving">Saving...</string>
+    <string name="faild_save">Failed to save Image</string>
+    <string name="saving_succ_img">Image Saved Successfully</string>
+    <string name="save_alert_img">Are you want to exit without saving image ?</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="discard">Discard</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="signin_failed">Sign In Failed</string>
+    <string name="required">Required</string>
+    <string name="signup_failed">Failed to Signup</string>
+    <string name="attepmt_to_upload">Attempting to upload</string>
+    <string name="share_to">Share To</string>
+    <string name="posting">Posting...</string>
+    <string name="uploading_progress">blogPost upload progress:</string>
+    <string name="failed_upload">Photo upload failed</string>
+    <string name="upload_sucess">Photo upload Success</string>
+    <string name="upload_sucess_vid">Video upload success</string>
+    <string name="upload_failed_vid">Video Uploading Failed</string>
+    <string name="uploading_progress_vid">Video upload progress:</string>
+    <string name="delete">Delete</string>
+    <string name="your_age">choose your age</string>
+    <string name="default_age">9/3/1997</string>
+    <string name="like_btn">Like</string>
+    <string name="rotation">Rotation</string>
+    <string name="time">Time</string>
+
+    <!-- -->
+    <string name="collapse_text_label">show less</string>
+    <string name="expand_text_label">show more</string>
+    <string name="duration_minutes_shortest">%1$d m</string>
+    <string name="duration_hours_shortest">%1$d h</string>
+    <string name="duration_days_shortest">%1$d d</string>
+    <string name="duration_week_shortest">%1$d w</string>
+    <string name="internet_connection_failed">No internet connection</string>
+    <string name="post_image_transition_name" translatable="false">post_image_transition</string>
+    <string name="post_author_image_transition_name" translatable="false">post_author_image_transition_name</string>
+    <string name="message_new_post_was_created">New post was created</string>
+    <string name="send_comment_button_label">Send</string>
+    <string name="posted_by_label">Posted by:</string>
+    <string name="comment_text_hint">Enter your comment …</string>
+    <string name="button_post_comment">Post comment</string>
+    <string name="posts_tab_title">Posts</string>
+    <string name="users_tab_title">Users</string>
+    <string name="press_once_again_to_exit">Press once again to exit</string>
+    <!--Follow-->
+    <string name="button_follow_title">Follow</string>
+    <string name="button_follow_back_title">Follow back</string>
+    <string name="button_following">Following</string>
+    <string name="unfollow_user_message">Unfollow %1$s?</string>
+    <string name="button_title_unfollow">Unfollow</string>
+    <string name="message_following_posts_empty">Follow somebody to see his new posts</string>
+    <string name="following_post_menu_item">Following Posts</string>
+    <!-- -->
+    <string name="empty_user_search_message">No users found</string>
+    <string name="unable_to_fetch_image">Unable to fetch image&#8230;</string>
+    <string name="action_chat">Chat</string>
+    <string name="action_contact_developer">Contact Developer</string>
+    <string name="action_add_chat">Add Chat</string>
+    <string name="actions">Actions</string>
+    <string name="activity_group_admin_panel_group_icon_title">Change Group Image</string>
+    <string name="visit_profile">VisitProfile</string>
+    <array name="topics">
+        <item>notifications</item>
+        <item>promotional_messages</item>
+    </array>
+</resources>

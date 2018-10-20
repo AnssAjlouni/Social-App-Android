@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/watchersContainer"
+        android:layout_width="@dimen/post_counters_item_width"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/intrinsic_padding"
+        android:paddingBottom="@dimen/intrinsic_padding"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/watcherImageView"
+            android:src="@drawable/ic_watchers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/watcherCounterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/small_intrinsic_padding"
+            android:paddingLeft="@dimen/small_intrinsic_padding"
+            android:paddingEnd="@dimen/small_intrinsic_padding"
+            android:paddingRight="@dimen/small_intrinsic_padding"
+            android:textAppearance="@style/TextAppearance.Second.Light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/likesContainer"
+        android:layout_width="@dimen/post_counters_item_width"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/intrinsic_padding"
+        android:paddingBottom="@dimen/intrinsic_padding"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/likesImageView"
+            android:src="@drawable/ic_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/likeCounterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/small_intrinsic_padding"
+            android:paddingLeft="@dimen/small_intrinsic_padding"
+            android:paddingEnd="@dimen/small_intrinsic_padding"
+            android:paddingRight="@dimen/small_intrinsic_padding"
+            android:textAppearance="@style/TextAppearance.Second.Light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/commentsCounterContainer"
+        android:layout_width="@dimen/post_counters_item_width"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/intrinsic_padding"
+        android:paddingBottom="@dimen/intrinsic_padding"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/commentsCountImageView"
+            android:src="@drawable/ic_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/commentsCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/small_intrinsic_padding"
+            android:paddingLeft="@dimen/small_intrinsic_padding"
+            android:paddingEnd="@dimen/small_intrinsic_padding"
+            android:paddingRight="@dimen/small_intrinsic_padding"
+            android:textAppearance="@style/TextAppearance.Second.Light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dateContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/intrinsic_padding"
+        android:paddingBottom="@dimen/intrinsic_padding"
+        android:paddingStart="@dimen/intrinsic_padding"
+        android:paddingLeft="@dimen/intrinsic_padding"
+        android:paddingEnd="@dimen/intrinsic_padding"
+        android:paddingRight="@dimen/intrinsic_padding"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/dateImageView"
+            android:src="@drawable/ic_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/small_intrinsic_padding"
+            android:paddingLeft="@dimen/small_intrinsic_padding"
+            android:paddingEnd="@dimen/small_intrinsic_padding"
+            android:paddingRight="@dimen/small_intrinsic_padding"
+            android:textAppearance="@style/TextAppearance.Second.Light" />
+
+    </LinearLayout>
+
+</LinearLayout>

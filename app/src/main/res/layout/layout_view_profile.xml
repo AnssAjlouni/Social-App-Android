@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="218dp"
+            android:background="@drawable/ic_default_background"
+            android:id="@+id/cover_layout">
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cover_layout"
+            android:background="@color/grey_100">
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="218dp"
+            android:background="@color/colorAccent"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:minHeight="275dp">
+            <RelativeLayout
+                android:id="@+id/contact_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="170dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/posts"
+                            android:textStyle="bold"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/posts_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="1dp"
+                            android:text="@string/loading"
+                            android:textColor="#ff4081"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/followers"
+                            android:textStyle="bold"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/followers_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="1dp"
+                            android:text="@string/loading"
+                            android:textColor="#ff4081"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/following"
+                            android:textStyle="bold"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/following_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="1dp"
+                            android:text="@string/loading"
+                            android:textColor="#ff4081"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/profile_displayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100sp"
+
+                android:text="@string/loading"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="Mohamed El Sayed"/>
+
+            <TextView
+                android:id="@+id/profile_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_displayName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/loading"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                tools:text="Developer"/>
+            <Button
+                android:id="@+id/follow_btn"
+                android:textColor="#ff4081"
+                android:background="@drawable/curved_btn"
+                android:layout_below="@id/contact_info"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="@string/loading"/>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/profile_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130.75dp"
+            android:src="@drawable/circle_border"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="166.5dp"
+            android:layout_height="166.5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="135dp"
+            android:src="@drawable/ic_default_background"/>
+
+
+    </RelativeLayout>

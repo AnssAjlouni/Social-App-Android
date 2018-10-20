@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTransparenthalf"
+    tools:context=".controllers.activities_main.SignInActivity"
+    android:id="@+id/myLayout">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/login_page_logo"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/logo"
+            app:layout_constraintBottom_toTopOf="@+id/field_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@mipmap/ic_logo" />
+
+        <EditText
+            android:id="@+id/field_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="62dp"
+            style="@style/Button_pink_half"
+            android:ems="10"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColor="@color/pink"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_page_logo" />
+
+        <EditText
+            android:id="@+id/field_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="9dp"
+            style="@style/Button_pink_half"
+            android:ems="10"
+            android:hint="@string/pass_hint"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@color/pink"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/field_email" />
+        <!-- Backgroung tint 21Api or higher -->
+        <Button
+            android:id="@+id/button_sign_in"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/curved_btn"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/login_btn_text"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            style="@style/Button_pink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/field_password" />
+
+        <Button
+            android:id="@+id/Login_reg_btn"
+            style="@style/Button_white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/curved_btn"
+            android:text="@string/login_reg_btn_text"
+            android:textAllCaps="false"
+            android:textColor="@color/pink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_sign_in" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>

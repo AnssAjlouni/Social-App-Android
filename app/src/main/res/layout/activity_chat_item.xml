@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:id="@+id/select_chat_layout">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_chats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:id="@+id/box_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/chat_margin_small"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/chat_padding_small"
+        android:paddingEnd="@dimen/chat_padding_small"
+        android:paddingStart="@dimen/chat_padding_small">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_single_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_default_image" />
+
+            <TextView
+                android:id="@+id/user_single_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/user_single_image"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/user_single_image"
+                android:layout_toRightOf="@+id/user_single_image"
+                android:text="@string/loading"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/user_single_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/user_single_name"
+                android:layout_alignLeft="@+id/user_single_name"
+                android:layout_below="@+id/user_single_name"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/loading"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/user_single_online_icon"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/user_single_name"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/user_single_name"
+                android:layout_toRightOf="@+id/user_single_name"
+                android:visibility="invisible"
+                android:src="@drawable/ic_online" />
+
+            <TextView
+                android:id="@+id/user_single_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/user_single_name"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/loading"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

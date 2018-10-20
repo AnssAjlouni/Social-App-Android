@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Strings-->
+    <string name="app_name">أكاديمية المستقبل</string>
+    <string name="default_notification_channel_id">اكاديمية المستقبل</string>
+    <string name="send">ارسال</string>
+    <string name="your_comment">تعليقك هنا ...</string>
+    <string name="image_share">مشاركة</string>
+    <string name="write_description">اكتب وصف</string>
+    <string name="write_here">اكتب هنا</string>
+    <string name="loading">جارى التحميل</string>
+    <string name="name_hint">اسمك ..</string>
+    <string name="btn_save">حفظ</string>
+    <string name="likes_count">0 لايك</string>
+    <string name="comment_count">0 تعليق</string>
+    <string name="write_post">اكتب منشور</string>
+    <string name="logo">اكاديمية المستقبل</string>
+    <string name="filter">الفلاتر</string>
+    <string name="adjust">ظبط</string>
+    <string name="brush">فرشاة</string>
+    <string name="text">نص</string>
+    <string name="eraser">استيكة</string>
+    <string name="sticker">استيكر</string>
+    <string name="emoji">ايموشنز</string>
+    <string name="brightness">سطوع</string>
+    <string name="contrast">تناقض</string>
+    <string name="saturation">التشبع</string>
+    <!-- ========================================================= -->
+    <!-- App Strings-->
+    <string name="email_hint">ايميلك ...</string>
+    <string name="pass_hint">الباسورد ...</string>
+    <string name="reg_btn">انشاء حساب جديد</string>
+    <string name="reg_login_text">لديك حساب سابق ؟؟</string>
+    <string name="login_btn_text">تسجيل الدخول</string>
+    <string name="login_reg_btn_text">تريد حساب جديد ؟</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="action_settings">الاعدادات</string>
+    <!-- ========================================================= -->
+    <!-- App Strings-->
+    <string name="tab_filters">الفلاتر</string>
+    <string name="tab_edit">تعديل</string>
+    <string name="filter_normal">Normal</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+    <!-- ========================================================= -->
+    <!-- App Strings-->
+    <string name="permission_camera_rationale">الوصول الى الكاميرا مطلوب</string>
+    <string name="no_camera_permission">يجب السماح بتشغيل الكاميرا.</string>
+    <!-- ========================================================= -->
+    <!-- App Strings-->
+    <string name="selected_image">selected_image</string>
+    <string name="selected_video">selected_video</string>
+    <string name="selected_bitmap">selected_bitmap</string>
+    <string name="new_photo">new_photo</string>
+    <string name="new_video">new_video</string>
+    <string name="profile_photo">profile_photo</string>
+    <string name="tweet">المنشورات</string>
+    <string name="gallery">المعرض</string>
+    <string name="video">الفيديوهات</string>
+    <!-- ========================================================= -->
+    <!-- App Strings-->
+    <string name="dbname_users">users</string>
+    <string name="dbname_user_account_settings">user_account_settings</string>
+    <string name="dbname_photos">Posts</string>
+    <string name="dbname_user_photos">user_Posts</string>
+    <string name="dbname_following">following</string>
+    <string name="dbname_followers">followers</string>
+    <!-- ========================================================= -->
+    <!-- App Strings-->
+    <string name="string_contact_list_activity_title">جهات الاتصال</string>
+    <string name="string_conversation_list_activity_title">المحادثات</string>
+    <string name="string_create_group_activity_title">مجموعة جديدة</string>
+    <string name="string_add_members_activity_title">اضافة عضو جديد</string>
+    <string name="label_no_conversation_error_title">لا محادثات سابقة</string>
+    <string name="label_no_conversation_error_subtitle">اضغط على الزر أدناه لبدء محادثة جديدة!</string>
+    <string name="action_create_group">انشاء جروب</string>
+    <string name="activity_group_admin_panel_add_group_title">مجموعة جديدة</string>
+    <!--create_group_activity-->
+    <string name="activity_new_group_icon_label">Add\nphoto</string>
+    <string name="activity_new_group_group_name_hint_label">تحديد اسم الجروب</string>
+    <string name="menu_activity_new_group_action_next">التالى</string>
+
+    <!--add_members_activity-->
+    <string name="add_members_activity_searchview_query_hint">البحث عن</string>
+    <string name="add_members_activity_contact_already_added_label">أضيف بالفعل إلى المجموعة</string>
+    <string name="add_members_activity_contact_not_added_label">الرقم غير موجود في القائمة</string>
+    <string name="activity_add_member_to_chat_group_selected_contacts_title">جهات الاتصال المحددة</string>
+    <string name="add_members_activity_contacts_title">قائمةالاتصال</string>
+    <string name="menu_add_members_action_create">انشاء</string>
+    <string name="menu_add_members_action_add_member">@string/activity_group_admin_panel_add_member_title</string>
+    <string name="menu_add_members_action_next">التالى</string>
+
+    <!--activity contact list -->
+    <string name="label_no_contacts_error_title">لم يتم العثور على جهة اتصال</string>
+    <string name="label_no_contacts_error_subtitle">قم بتغيير طريقة البحث</string>
+    <string name="activity_contact_list_error_cannot_create_group_offline_label">لا يمكنك إنشاء المجموعة إذا كنت في وضع عدم الاتصال</string>
+
+    <!--activity_group_admin_panel-->
+    <string name="activity_group_admin_panel_members_label">الاعضاء</string>
+    <string name="activity_group_admin_panel_group_admin_label">مدير المجموعة</string>
+    <string name="activity_group_admin_panel_created_by_label">ثم الانشاء بواسطة </string>
+    <string name="activity_group_admin_panel_created_on_label">ثم الانشاء فى </string>
+    <string name="activity_group_admin_panel_group_id_label">السيريال </string>
+    <string name="activity_group_admin_panel_not_available_members_label"> قم بالبحث لايجاد المزيد من الاعضاء للتحدث معهم</string>
+    <string name="activity_group_admin_panel_add_member_title">اضافة عضو</string>
+    <string name="menu_activity_group_admin_panel_activity_cannot_add_member_offline">لا يمكن إضافة عضو إذا كنت غير متصل</string>
+
+    <!--bottom_sheet_group_admin_panel_member-->
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_btn_label">حذف عضو</string>
+    <string name="bottom_sheet_group_admin_panel_member_leave_group_btn_label">الخروج من المجموعة</string>
+    <string name="bottom_sheet_group_admin_panel_member_see_profile_btn_label">زيارة البروفايل</string>
+    <string name="bottom_sheet_group_admin_panel_member_send_message_btn_label">ارسال رسالة</string>
+    <string name="bottom_sheet_group_admin_panel_member_btn_cancel_label">الغاء</string>
+
+    <!--activity_conversation_list-->
+    <string name="activity_conversation_list_adapter_you_label">انت</string>
+
+    <!--fragment_conversation_list-->
+    <string name="fragment_conversation_list_my_group_label">المجموعات</string>
+
+    <!--bottom_sheet_group_admin_panel_member-->
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_title">حذف عضو</string>
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_message">هل تريد بالفعل حذف <b>%1$s</b> من المجوعة</string>
+    <string name="bottom_sheet_group_admin_panel_member_leave_group_alert_message">هل تريد بالفعل الخروج من المجموعة ؟</string>
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_positive_click">حذف</string>
+    <string name="bottom_sheet_group_admin_panel_member_leave_group_alert_positive_click">خروج</string>
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_alert_negative_click">الغاء</string>
+
+    <!--activity_message_list-->
+    <string name="activity_message_list_group_info_you_label">انت</string>
+    <string name="activity_message_list_convers_with_presence_online">متصل</string>
+    <string name="activity_message_list_convers_with_presence_offline">غير متصل</string>
+    <string name="activity_message_list_progress_dialog_upload">جارى الرفع ..</string>
+    <string name="activity_message_list_progress_dialog_upload_failed">لا يمكن استكمال الرفع</string>
+    <string name="activity_message_list_no_message_error_title_label">تم حذفك من المجموعة</string>
+    <string name="activity_message_list_no_message_error_subtitle_label">تحدث مع صاحب المجموعة لمزيد من المعلومات</string>
+    <string name="activity_message_list_confirm_dialog_upload_title_label">ارسال صورة</string>
+    <string name="activity_message_list_confirm_dialog_upload_message_label">هل تريد بالفعل ارسال هذة الصورة</string>
+    <string name="activity_message_list_type_image_label">صورة</string>
+    <string name="activity_message_list_type_file_label">ملف</string>
+
+    <!-- -->
+    <string name="availability">التوفر</string>
+    <string name="action_edit">تعديل</string>
+    <string name="details">البيانات</string>
+    <string-array name="availability_states">
+        <item>متاح</item>
+        <item>غائب</item>
+        <item>غانب لمدة</item>
+        <item>مشغول</item>
+    </string-array>
+    <string name="location_hint">موقعك</string>
+    <string name="phone_number_hint">رقم التليفون</string>
+    <string name="country">الدولة</string>
+    <string name="status">الحالة</string>
+    <string name="name">الاسم</string>
+    <string name="action_logout">تسجيل الخروج</string>
+    <string name="action_save">الحفظ</string>
+    <!-- ========================================================= -->
+    <string name="ok">حسنا</string>
+    <string name="edit_profile">تعديل البروفايل</string>
+    <string name="posts">المنشورات</string>
+    <string name="followers">المتابعون</string>
+    <string name="following">المتابعين</string>
+    <string name="your_story">حالتك</string>
+    <string name="news_feed">اخر الاخبار</string>
+    <string name="publish">نشر</string>
+    <string name="total_followers">اجمالى المتابعون</string>
+    <string name="follow">متابعة</string>
+    <string name="done">تم</string>
+    <string name="opacity">غموض</string>
+    <string name="close">اغلاق</string>
+    <string name="reply">رد</string>
+    <string name="notification_reply">رد</string>
+    <string name="replied">تم الرد</string>
+    <string name="next">التالى</string>
+    <string name="likes">لايك</string>
+    <string name="comments">التعليقات</string>
+    <string name="unfollow">الغاء المتابعة</string>
+    <string name="follow_back">رد الفولو</string>
+    <string name="accept_follow">قبول طلب المتابعة</string>
+    <string name="cancel_follow">رفض طلب المتابعة</string>
+    <string name="online">متاح</string>
+    <string name="add_tag">اضافة تاج</string>
+    <string name="just_now">الان</string>
+    <string name="min_ago">منذ دقيقة</string>
+    <string name="minites_ago">دقائق</string>
+    <string name="hours_ago">ساعات</string>
+    <string name="days_ago">ايام</string>
+    <string name="hour_ago">منذ ساعة</string>
+    <string name="yesterday">الامس</string>
+    <string name="today">اليوم</string>
+    <string name="title">العنوان</string>
+    <string name="saving">جارى الحفظ ...</string>
+    <string name="faild_save">لم يتم حفظ الصورة</string>
+    <string name="saving_succ_img">تم حفظ الصورة</string>
+    <string name="save_alert_img">هل تريد الخروج بدون حفظ الصورة ؟</string>
+    <string name="save">حفظ</string>
+    <string name="update">تعديل</string>
+    <string name="cancel">العاء</string>
+    <string name="discard">الغاء</string>
+    <string name="account_settings">اعدادات الحساب</string>
+    <string name="signin_failed">مشكلة فى تسجيل الدخول</string>
+    <string name="required">مطلوب</string>
+    <string name="signup_failed">مشكلة فى  تسجيل الدخول</string>
+    <string name="attepmt_to_upload">جارى الرفع</string>
+    <string name="share_to">مشاركة الى</string>
+    <string name="posting">جارى النشر ...</string>
+    <string name="uploading_progress">blogPost upload progress:</string>
+    <string name="failed_upload">Photo upload failed</string>
+    <string name="upload_sucess">Photo upload Success</string>
+    <string name="upload_sucess_vid">Video upload success</string>
+    <string name="upload_failed_vid">Video Uploading Failed</string>
+    <string name="uploading_progress_vid">Video upload progress:</string>
+    <string name="delete">حذف</string>
+    <string name="your_age">اختر عمرك</string>
+    <string name="default_age">9/3/1997</string>
+    <string name="like_btn">لايك</string>
+    <string name="rotation">دوران</string>
+    <string name="time">الوقت</string>
+
+    <!-- -->
+    <string name="collapse_text_label">عرض أقل</string>
+    <string name="expand_text_label">عرض اكثر</string>
+    <string name="duration_minutes_shortest">%1$d m</string>
+    <string name="duration_hours_shortest">%1$d h</string>
+    <string name="duration_days_shortest">%1$d d</string>
+    <string name="duration_week_shortest">%1$d w</string>
+    <string name="internet_connection_failed">لا يوجد اتصال بالإنترنت</string>
+    <string name="post_image_transition_name" translatable="false">post_image_transition</string>
+    <string name="post_author_image_transition_name" translatable="false">post_author_image_transition_name</string>
+    <string name="message_new_post_was_created">تم انشاء بوست جديد</string>
+    <string name="send_comment_button_label">ارسال</string>
+    <string name="posted_by_label">تم النشر بواسطة :</string>
+    <string name="comment_text_hint">اكتب تعليقك ..</string>
+    <string name="button_post_comment">نشر تعليق</string>
+    <string name="posts_tab_title">البوستات</string>
+    <string name="users_tab_title">الحسابات</string>
+    <string name="press_once_again_to_exit">انقر مرة اخرى للخروج</string>
+    <!--Follow-->
+    <string name="button_follow_title">متابعة</string>
+    <string name="button_follow_back_title">Follow back</string>
+    <string name="button_following">Following</string>
+    <string name="unfollow_user_message">Unfollow %1$s?</string>
+    <string name="button_title_unfollow">Unfollow</string>
+    <string name="message_following_posts_empty">Follow somebody to see his new posts</string>
+    <string name="following_post_menu_item">Following Posts</string>
+    <!-- -->
+    <string name="empty_user_search_message">No users found</string>
+    <string name="unable_to_fetch_image">Unable to fetch image&#8230;</string>
+    <string name="action_chat">Chat</string>
+    <string name="action_contact_developer">Contact Developer</string>
+    <string name="action_add_chat">Add Chat</string>
+    <string name="actions">Actions</string>
+    <string name="visit_profile">زيارة البروفايل</string>
+    <array name="topics">
+        <item>notifications</item>
+        <item>promotional_messages</item>
+    </array>
+
+</resources>

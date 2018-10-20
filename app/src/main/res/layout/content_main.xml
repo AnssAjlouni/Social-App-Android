@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".controllers.activities_editor.ImageEActivity"
+    tools:showIn="@layout/activity_image_e">
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:scaleType="centerCrop" />
+
+    <com.rovas.forgram.fogram.Utils.Filters.NonSwipeableViewPager
+        android:id="@+id/viewpager_filter"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_above="@+id/tabs_filter"
+        android:layout_below="@+id/image_preview"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:tabGravity="fill"
+        app:tabMode="fixed" />
+
+</RelativeLayout>

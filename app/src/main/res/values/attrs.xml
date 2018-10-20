@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StoriesProgressView">
+        <attr name="progressCount" format="integer|reference" />
+    </declare-styleable>
+    <declare-styleable name="IconView">
+        <attr name="reaction" format="enum">
+            <enum name="like" value="0"/>
+            <enum name="love" value="1"/>
+            <enum name="laugh" value="2"/>
+            <enum name="wow" value="3"/>
+            <enum name="sad" value="4"/>
+            <enum name="angry" value="5"/>
+        </attr>
+    </declare-styleable>
+    <attr name="SpinKitViewStyle" format="reference" />
+    <declare-styleable name="SpinKitView">
+        <attr name="SpinKit_Style">
+            <enum name="RotatingPlane" value="0" />
+            <enum name="DoubleBounce" value="1" />
+            <enum name="Wave" value="2" />
+            <enum name="WanderingCubes" value="3" />
+            <enum name="Pulse" value="4" />
+            <enum name="ChasingDots" value="5" />
+            <enum name="ThreeBounce" value="6" />
+            <enum name="Circle" value="7" />
+            <enum name="CubeGrid" value="8" />
+            <enum name="FadingCircle" value="9" />
+            <enum name="FoldingCube" value="10" />
+            <enum name="RotatingCircle" value="11" />
+            <enum name="MultiplePulse" value="12" />
+            <enum name="PulseRing" value="13" />
+            <enum name="MultiplePulseRing" value="14" />
+        </attr>
+        <attr name="SpinKit_Color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer" />
+        <attr name="animDuration" format="integer" />
+        <attr name="animAlphaStart" format="float" />
+        <attr name="expandText" format="string" />
+        <attr name="collapseText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="shadow" format="boolean" />
+        <attr name="shadow_color" format="color" />
+        <attr name="shadow_radius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="AnimButton">
+        <attr name="first" format="reference"/>
+        <attr name="second" format="reference"/>
+        <attr name="duration" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="InsLoadingViewAttr">
+        <attr name="rotate_duration" format="integer" />
+        <attr name="circle_duration" format="integer" />
+        <attr name="start_color" format="color" />
+        <attr name="end_color" format="color" />
+        <attr name="status" >
+            <enum name="loading" value="0" />
+            <enum name="clicked" value="1" />
+            <enum name="unclicked" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="TagGroup">
+        <!-- Whether the tag group is in append mode. -->
+        <attr name="atg_isAppendMode" format="boolean" />
+        <!-- If the tag group is in append mode, what the hint of input tag. -->
+        <attr name="atg_inputHint" format="string" />
+
+        <!-- The tag view outline border color. -->
+        <attr name="atg_borderColor" format="color" />
+        <!-- The tag view text color. -->
+        <attr name="atg_textColor" format="color" />
+        <!-- The tag view background color. -->
+        <attr name="atg_backgroundColor" format="color" />
+
+        <!-- The dash outline border color, when in append mode. -->
+        <attr name="atg_dashBorderColor" format="color" />
+        <!-- The input tag hint text color, when in append mode. -->
+        <attr name="atg_inputHintColor" format="color" />
+        <!-- The input tag type text color, when in append mode. -->
+        <attr name="atg_inputTextColor" format="color" />
+
+        <!-- The checked tag view outline border color. -->
+        <attr name="atg_checkedBorderColor" format="color" />
+        <!-- The checked text color. -->
+        <attr name="atg_checkedTextColor" format="color" />
+        <!-- The checked marker color. -->
+        <attr name="atg_checkedMarkerColor" format="color" />
+        <!-- The checked tag view background color. -->
+        <attr name="atg_checkedBackgroundColor" format="color" />
+
+        <!-- The tag view background color, when the tag view is being pressed. -->
+        <attr name="atg_pressedBackgroundColor" format="color" />
+
+        <!-- The tag view outline border stroke width. -->
+        <attr name="atg_borderStrokeWidth" format="dimension" />
+        <!-- The tag view text size. -->
+        <attr name="atg_textSize" format="dimension" />
+
+        <attr name="atg_horizontalSpacing" format="dimension" />
+        <attr name="atg_verticalSpacing" format="dimension" />
+        <attr name="atg_horizontalPadding" format="dimension" />
+        <attr name="atg_verticalPadding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="tagGroupStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="Emojicon">
+        <attr name="emojiconSize" format="dimension" />
+        <attr name="emojiconAlignment" format="enum">
+            <enum name="bottom" value="0" />
+            <enum name="baseline" value="1" />
+        </attr>
+        <attr name="emojiconTextStart" format="integer" />
+        <attr name="emojiconTextLength" format="integer" />
+        <attr name="emojiconUseSystemDefault" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ShimmerLayout">
+        <attr name="shimmer_color" format="color|reference"/>
+        <attr name="shimmer_animation_duration" format="integer|reference"/>
+        <attr name="shimmer_auto_start" format="boolean|reference"/>
+        <attr name="shimmer_angle" format="integer|reference"/>
+        <attr name="shimmer_mask_width" format="float|reference"/>
+        <attr name="shimmer_gradient_center_color_width" format="float|reference"/>
+        <attr name="shimmer_reverse_animation" format="boolean|reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    tools:context=".controllers.activities_chatgroup.GroupChatSQLActivity"
+    >
+
+    <include
+        android:id="@+id/chat_app_bar"
+        layout="@layout/app_bar_layout" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/message_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rela_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:stackFromBottom="true"
+        android:layout_below="@+id/chat_app_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/message_display_area"
+            android:weightSum="4">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/chat_recyclerview" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:id="@+id/rela_layout">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            >
+            <com.devlomi.record_view.RecordView
+                android:id="@+id/record_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@id/record_button"
+                android:layout_toLeftOf="@id/record_button"
+                app:slide_to_cancel_arrow="@drawable/recv_ic_arrow"
+                app:slide_to_cancel_bounds="10dp"
+                app:slide_to_cancel_margin_right="10dp"
+                app:slide_to_cancel_text="Slide To Cancel" />
+
+            <com.devlomi.record_view.RecordButton
+                android:id="@+id/record_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/recv_bg_mic"
+                android:scaleType="centerInside"
+                app:mic_icon="@drawable/recv_ic_mic_white"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:id="@+id/typing_panel"
+            android:orientation="horizontal"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:id="@+id/text_input">
+
+                <RelativeLayout
+                    android:id="@+id/rv_message_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/edt_msg_content_margin"
+                    android:layout_marginStart="@dimen/edt_msg_content_margin"
+                    android:layout_marginLeft="@dimen/edt_msg_content_margin"
+                    android:background="@drawable/message_item_background"
+                    android:paddingBottom="@dimen/edt_msg_content_padding_v"
+                    android:paddingLeft="@dimen/edt_msg_content_padding_h"
+                    android:paddingRight="@dimen/edt_msg_content_padding_h"
+                    android:paddingTop="@dimen/edt_msg_content_padding_v">
+
+                    <ImageView
+                        android:id="@+id/iv_emoji"
+                        android:layout_width="@dimen/edt_ic_size"
+                        android:layout_height="@dimen/edt_ic_size"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="4dp"
+                        android:src="@drawable/ic_insert_emotions"
+                        android:tint="@color/colorSecondaryIcon" />
+
+                    <com.rovas.forgram.fogram.Utils.Emojj.Helper.EmojiconEditText
+                        android:id="@+id/inputMsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/iv_emoji"
+                        android:layout_toStartOf="@+id/iv_camera"
+                        android:layout_toRightOf="@+id/iv_emoji"
+                        android:layout_toLeftOf="@+id/iv_camera"
+                        android:background="#00ffffff"
+                        android:hint="@string/write_here"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:minHeight="48dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_camera"
+                        android:layout_width="@dimen/edt_ic_size"
+                        android:layout_height="@dimen/edt_ic_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="4dp"
+                        android:src="@drawable/ic_camera"
+                        android:tint="@color/colorSecondaryIcon" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4.5"
+                android:gravity="bottom">
+
+                <ImageButton
+                    android:id="@+id/btnSend"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/recv_bg_mic"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_near_me_white_24dp"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <com.devlomi.record_view.RecordButton
+                    android:id="@+id/record_button_"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/recv_bg_mic"
+                    android:scaleType="centerInside"
+                    app:mic_icon="@drawable/recv_ic_mic_white"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp"
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

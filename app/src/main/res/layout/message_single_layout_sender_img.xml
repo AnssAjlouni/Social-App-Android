@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/RowStyle"
+    android:id="@+id/message_root_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content"
+        android:layout_toRightOf="@+id/time_text_layout"
+        android:layout_toEndOf="@+id/time_text_layout"
+        android:layout_centerVertical="true"
+        android:gravity="end"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        >
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_bubble_sender">
+
+            <ImageView
+                android:id="@+id/message_image"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/ic_default_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/extra_layout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="4dp"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/loading"
+        android:id="@+id/time_text_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        style="@style/MessageDateStyle"/>
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="26dp"
+        android:id="@+id/read_receipt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

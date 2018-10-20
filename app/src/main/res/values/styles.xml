@@ -1,0 +1,440 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MessageDateStyle">
+        <item name="android:textSize">13dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="CustomButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!--Row Margins-->
+    <style name="RowStyle">
+        <item name="android:padding">7dp</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="DialogSlide_left_right">
+        <item name="android:windowEnterAnimation">@anim/slide_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_right</item>
+    </style>
+    <style name="DialogSlide_up_down">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+    <style name="DialogSlide_sclae">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.NoActionBar.Fullscreen">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:actionMenuTextColor">@color/color_option_menu</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Button_color_primary" parent="Base.TextAppearance.AppCompat.Button" >
+        <item name="backgroundTint">@color/colorPrimary</item>
+    </style>
+    <style name="Button_color_accent" parent="Base.TextAppearance.AppCompat.Button" >
+        <item name="backgroundTint">@color/colorAccent</item>
+    </style>
+    <style name="Button_white" parent="Base.TextAppearance.AppCompat.Button" >
+        <item name="backgroundTint">@color/white</item>
+    </style>
+    <style name="Button_whiteTransparenthalf" parent="Base.TextAppearance.AppCompat.Button" >
+        <item name="backgroundTint">@color/whiteTransparenthalf</item>
+    </style>
+    <style name="Button_pink" parent="Base.TextAppearance.AppCompat.Button" >
+        <item name="backgroundTint">@color/pink</item>
+    </style>
+    <style name="Button_pink_half" parent="Base.TextAppearance.AppCompat.Button" >
+        <item name="backgroundTint">@color/pink_half</item>
+    </style>
+    <style name="chat_text_message_style">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+
+    </style>
+
+    <style name="chat_timings">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#a6abad</item>
+
+    </style>
+
+    <style name="NewDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="EditText">
+        <item name="android:singleLine">true</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="AppTheme.Button.Flat" parent="Theme.AppCompat.Light">
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+        <item name="colorControlHighlight">@color/grey_200</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    <style name="AppTheme.Toolbar.Expanded.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">22dp</item>
+    </style>
+    <style name="TextAppearance.Title" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/primary_dark_text</item>
+    </style>
+
+    <style name="TextAppearance.Large" parent="@android:style/TextAppearance">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/primary_dark_text</item>
+    </style>
+
+    <style name="TextAppearance.Title.White" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.Title.Light" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/secondary_light</item>
+    </style>
+
+    <style name="TextAppearance.Toolbar.Expanded" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.Second" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
+    <style name="TextAppearance.Second.Light" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/secondary_light</item>
+    </style>
+
+    <style name="TextAppearance.Highlight" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/highlight_text</item>
+    </style>
+
+    <style name="TextAppearance.Second.Dark" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/primary_dark_text</item>
+    </style>
+
+    <style name="TextAppearance.MainTitle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.Counter" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/primary_dark_text</item>
+    </style>
+    <!--Tab layout-->
+    <style name="TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">@dimen/tab_indicator_height</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+    </style>
+    <style name="DarkActionBarWithLightAccent" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorAccent">@color/white</item>
+    </style>
+    <style name="TagGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="atg_isAppendMode">false</item>
+        <item name="atg_inputHint">@string/add_tag</item>
+        <item name="atg_borderColor">#49C120</item>
+        <item name="atg_textColor">#49C120</item>
+        <item name="atg_backgroundColor">#FFFFFF</item>
+        <item name="atg_dashBorderColor">#AAAAAA</item>
+        <item name="atg_inputHintColor">#80000000</item>
+        <item name="atg_inputTextColor">#DE000000</item>
+        <item name="atg_checkedBorderColor">#49C120</item>
+        <item name="atg_checkedTextColor">#FFFFFF</item>
+        <item name="atg_checkedMarkerColor">#FFFFFF</item>
+        <item name="atg_checkedBackgroundColor">#49C120</item>
+        <item name="atg_pressedBackgroundColor">#EDEDED</item>
+        <item name="atg_borderStrokeWidth">0.5dp</item>
+        <item name="atg_textSize">13sp</item>
+        <item name="atg_horizontalSpacing">8dp</item>
+        <item name="atg_verticalSpacing">4dp</item>
+        <item name="atg_horizontalPadding">12dp</item>
+        <item name="atg_verticalPadding">3dp</item>
+    </style>
+
+    <style name="TagGroup.Small" parent="TagGroup">
+        <item name="atg_textSize">10sp</item>
+        <item name="atg_horizontalSpacing">6dp</item>
+        <item name="atg_verticalSpacing">3dp</item>
+        <item name="atg_horizontalPadding">8dp</item>
+        <item name="atg_verticalPadding">2dp</item>
+    </style>
+
+    <style name="TagGroup.Large" parent="TagGroup">
+        <item name="atg_borderStrokeWidth">0.7dp</item>
+        <item name="atg_textSize">15sp</item>
+        <item name="atg_horizontalSpacing">9dp</item>
+        <item name="atg_verticalSpacing">5dp</item>
+        <item name="atg_horizontalPadding">14dp</item>
+        <item name="atg_verticalPadding">4dp</item>
+    </style>
+
+    <style name="TagGroup.Beauty_Red" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FF3D7F</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FF3D7F</item>
+    </style>
+
+    <style name="TagGroup.Beauty_Red.Inverse" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FFFFFF</item>
+        <item name="atg_backgroundColor">#FF3D7F</item>
+        <item name="atg_inputHintColor">#80FFFFFF</item>
+        <item name="atg_inputTextColor">#DEFFFFFF</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedTextColor">#FF3D7F</item>
+        <item name="atg_checkedMarkerColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FFFFFF</item>
+        <item name="atg_pressedBackgroundColor">#FF99B1</item>
+    </style>
+    <style name="SpinKitView">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:minWidth">48dip</item>
+        <item name="android:maxWidth">48dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
+
+    <style name="SpinKitView.ChasingDots">
+        <item name="SpinKit_Style">ChasingDots</item>
+    </style>
+
+    <style name="SpinKitView.Circle">
+        <item name="SpinKit_Style">Circle</item>
+    </style>
+
+    <style name="SpinKitView.CubeGrid">
+        <item name="SpinKit_Style">CubeGrid</item>
+    </style>
+
+    <style name="SpinKitView.DoubleBounce">
+        <item name="SpinKit_Style">DoubleBounce</item>
+    </style>
+
+    <style name="SpinKitView.FadingCircle">
+        <item name="SpinKit_Style">FadingCircle</item>
+    </style>
+
+    <style name="SpinKitView.FoldingCube">
+        <item name="SpinKit_Style">FoldingCube</item>
+    </style>
+
+    <style name="SpinKitView.Pulse">
+        <item name="SpinKit_Style">Pulse</item>
+    </style>
+
+    <style name="SpinKitView.RotatingPlane">
+        <item name="SpinKit_Style">RotatingPlane</item>
+    </style>
+
+    <style name="SpinKitView.RotatingCircle">
+        <item name="SpinKit_Style">RotatingCircle</item>
+    </style>
+
+    <style name="SpinKitView.ThreeBounce">
+        <item name="SpinKit_Style">ThreeBounce</item>
+    </style>
+
+    <style name="SpinKitView.WanderingCubes">
+        <item name="SpinKit_Style">WanderingCubes</item>
+    </style>
+
+    <style name="SpinKitView.Wave">
+        <item name="SpinKit_Style">Wave</item>
+    </style>
+
+    <style name="SpinKitView.MultiplePulse">
+        <item name="SpinKit_Style">MultiplePulse</item>
+    </style>
+
+    <style name="SpinKitView.PulseRing">
+        <item name="SpinKit_Style">PulseRing</item>
+    </style>
+
+    <style name="SpinKitView.MultiplePulseRing">
+        <item name="SpinKit_Style">MultiplePulseRing</item>
+    </style>
+
+    <style name="SpinKitView.Large">
+        <item name="android:minWidth">76dip</item>
+        <item name="android:maxWidth">76dip</item>
+        <item name="android:minHeight">76dip</item>
+        <item name="android:maxHeight">76dip</item>
+    </style>
+
+    <style name="SpinKitView.Large.ChasingDots">
+        <item name="SpinKit_Style">ChasingDots</item>
+    </style>
+
+    <style name="SpinKitView.Large.Circle">
+        <item name="SpinKit_Style">Circle</item>
+    </style>
+
+    <style name="SpinKitView.Large.CubeGrid">
+        <item name="SpinKit_Style">CubeGrid</item>
+    </style>
+
+    <style name="SpinKitView.Large.DoubleBounce">
+        <item name="SpinKit_Style">DoubleBounce</item>
+    </style>
+
+    <style name="SpinKitView.Large.FadingCircle">
+        <item name="SpinKit_Style">FadingCircle</item>
+    </style>
+
+    <style name="SpinKitView.Large.FoldingCube">
+        <item name="SpinKit_Style">FoldingCube</item>
+    </style>
+
+    <style name="SpinKitView.Large.Pulse">
+        <item name="SpinKit_Style">Pulse</item>
+    </style>
+
+    <style name="SpinKitView.Large.RotatingPlane">
+        <item name="SpinKit_Style">RotatingPlane</item>
+    </style>
+
+    <style name="SpinKitView.Large.RotatingCircle">
+        <item name="SpinKit_Style">RotatingCircle</item>
+    </style>
+
+    <style name="SpinKitView.Large.ThreeBounce">
+        <item name="SpinKit_Style">ThreeBounce</item>
+    </style>
+
+    <style name="SpinKitView.Large.WanderingCubes">
+        <item name="SpinKit_Style">WanderingCubes</item>
+    </style>
+
+    <style name="SpinKitView.Large.Wave">
+        <item name="SpinKit_Style">Wave</item>
+    </style>
+
+    <style name="SpinKitView.Large.MultiplePulse">
+        <item name="SpinKit_Style">MultiplePulse</item>
+    </style>
+
+    <style name="SpinKitView.Large.PulseRing">
+        <item name="SpinKit_Style">PulseRing</item>
+    </style>
+
+    <style name="SpinKitView.Large.MultiplePulseRing">
+        <item name="SpinKit_Style">MultiplePulseRing</item>
+    </style>
+
+    <style name="SpinKitView.Small">
+        <item name="android:minWidth">16dip</item>
+        <item name="android:maxWidth">16dip</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="SpinKitView.Small.ChasingDots">
+        <item name="SpinKit_Style">ChasingDots</item>
+    </style>
+
+    <style name="SpinKitView.Small.Circle">
+        <item name="SpinKit_Style">Circle</item>
+    </style>
+
+    <style name="SpinKitView.Small.CubeGrid">
+        <item name="SpinKit_Style">CubeGrid</item>
+    </style>
+
+    <style name="SpinKitView.Small.DoubleBounce">
+        <item name="SpinKit_Style">DoubleBounce</item>
+    </style>
+
+    <style name="SpinKitView.Small.FadingCircle">
+        <item name="SpinKit_Style">FadingCircle</item>
+    </style>
+
+    <style name="SpinKitView.Small.FoldingCube">
+        <item name="SpinKit_Style">FoldingCube</item>
+    </style>
+
+    <style name="SpinKitView.Small.Pulse">
+        <item name="SpinKit_Style">Pulse</item>
+    </style>
+
+    <style name="SpinKitView.Small.RotatingPlane">
+        <item name="SpinKit_Style">RotatingPlane</item>
+    </style>
+
+    <style name="SpinKitView.Small.RotatingCircle">
+        <item name="SpinKit_Style">RotatingCircle</item>
+    </style>
+
+    <style name="SpinKitView.Small.ThreeBounce">
+        <item name="SpinKit_Style">ThreeBounce</item>
+    </style>
+
+    <style name="SpinKitView.Small.WanderingCubes">
+        <item name="SpinKit_Style">WanderingCubes</item>
+    </style>
+
+    <style name="SpinKitView.Small.Wave">
+        <item name="SpinKit_Style">Wave</item>
+    </style>
+
+    <style name="SpinKitView.Small.MultiplePulse">
+        <item name="SpinKit_Style">MultiplePulse</item>
+    </style>
+
+    <style name="SpinKitView.Small.PulseRing">
+        <item name="SpinKit_Style">PulseRing</item>
+    </style>
+
+    <style name="SpinKitView.Small.MultiplePulseRing">
+        <item name="SpinKit_Style">MultiplePulseRing</item>
+    </style>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="red_blod">#ae2020</color>
+    <color name="progress_primary">@color/white</color>
+    <color name="progress_secondary">#8affffff</color>
+    <color name="progress_max_active">@color/white</color>
+    <color name="default_color_light">#ff4092c3</color>
+    <color name="default_color_dark">#ff241c99</color>
+    <color name="shimmer_color">#a2878787</color>
+    <color name="shimmer_background_color">#b1b1b1</color>
+    <color name="blue_color_picker">#0066FF</color>
+    <color name="primary_dark_text">#28333D</color>
+    <color name="secondary_text">#434343</color>
+    <color name="secondary_light">#979797</color>
+    <color name="highlight_text">#17a1d7</color>
+    <color name="posts_counter_bg">#df3e3e3e</color>
+    <color name="follow_button_color">#0097D3</color>
+    <color name="follow_button_pressed_color">#0087BC</color>
+    <color name="follow_button_light_color">@color/white</color>
+    <color name="follow_button_light_pressed_color">#f7f7f7</color>
+    <color name="like_icon_activated">#FF5252</color>
+    <color name="circle_image_shadow">#8b8b8b</color>
+    <color name="brown_color_picker">#AF593E</color>
+    <color name="green_color_picker">#01A368</color>
+    <color name="orange_color_picker">#FF861F</color>
+    <color name="red_color_picker">#ED0A3F</color>
+    <color name="red_orange_color_picker">#FF3F34</color>
+    <color name="sky_blue_color_picker">#76D7EA</color>
+    <color name="violet_color_picker">#8359A3</color>
+    <color name="yellow_color_picker">#FBE870</color>
+    <color name="yellow_green_color_picker">#C5E17A</color>
+    <color name="tool_bg">#151414</color>
+    <color name="grey">#bfbfbf</color>
+    <color name="link_blue">#4d94ff</color>
+    <color name="darkRed">#cc0000</color>
+    <color name="whiteTransparenthalf">#00ffffff</color>
+    <color name="pink">#db348d</color>
+    <color name="pink_half">#ac919f</color>
+    <color name="fab_1">#4caf50</color>
+    <color name="fab_2">#2196f3</color>
+    <color name="mine_shaft">#303030</color>
+    <color name="background">#e9e3dd</color>
+    <color name="colorPrimaryIcon">#212121</color>
+    <color name="colorSecondaryIcon">#727272</color>
+    <color name="colorPrimary_chat">#005e52</color>
+    <color name="colorPrimaryPix">#075e54</color>
+    <color name="colorPrimaryLightPix">#80075e54</color>
+    <color name="thumb_background_color">#000000</color>
+    <color name="zomato_red">#a40100</color>
+    <color name="placeholder_background">#222322</color>
+    <color name="color_option_menu">#FF3990</color>
+    <color name="filter_label_normal">#8A8889</color>
+    <color name="filter_label_selected">#221F20</color>
+    <color name="body_background">#e8e8e8</color>
+    <color name="body_background_green">#82e783</color>
+    <color name="server_status_bar">#2b2b2b</color>
+    <color name="title_gray">#434343</color>
+    <color name="bg_msg_you">#eb543b</color>
+    <color name="bg_msg_from">#99FF33</color>
+    <color name="msg_border_color">#a1a1a1</color>
+    <color name="bg_btn_join">#3b58eb</color>
+    <color name="bg_msg_input">#e8e8e8</color>
+    <color name="text_msg_input">#626262</color>
+    <color name="lblFromName">#777777</color>
+    <color name="windowBackground">@color/white</color>
+
+
+
+    <!--activity_message_list-->
+    <color name="activity_message_list_error_view_text">@color/white</color>
+    <color name="activity_message_list_error_view_text_light">@color/white</color>
+    <color name="activity_message_list_error_view_background">#45000000</color>
+
+    <color name="chat_input_background">@color/grey_100</color>
+
+    <!--system-->
+    <color name="background_bubble_system">#C9E4F6</color>
+    <color name="background_bubble_text_system">@color/black</color>
+    <color name="color_clickable_link_system">@color/black</color>
+
+    <!--sender-->
+    <color name="background_bubble_sender">#99E1FFC7</color>
+    <color name="background_bubble_text_sender">@color/black</color>
+    <color name="background_bubble_timestamp_sender">@color/blue_grey_800</color>
+    <color name="color_clickable_link_sender">@color/black</color>
+
+    <!--recipient-->
+    <color name="background_bubble_recipient">@color/white</color>
+    <color name="background_bubble_text_recipient">@color/black</color>
+    <color name="background_bubble_timestamp_recipient">@color/blue_grey_800</color>
+    <color name="color_clickable_link_recipient">@color/black</color>
+
+    <color name="error_view_text">@color/grey_400</color>
+    <color name="error_view_text_light">@color/grey_600</color>
+
+</resources>
