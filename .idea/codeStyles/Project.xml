@@ -17,6 +17,7 @@
         <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Synthesize" />
         <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="InitMethod" />
         <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="StaticMethod" />
+        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="InstanceMethod" />
         <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="DeallocMethod" />
       </class>
       <extensions>
